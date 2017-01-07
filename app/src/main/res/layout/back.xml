@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+
+android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Background  Color  Picker"
+        android:id="@+id/textView"
+
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:stretchColumns="1">
+        <TableRow
+            android:paddingBottom="20sp"
+            android:paddingTop="20sp">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RED"
+                android:onClick="red"
+
+                android:textSize="25sp"
+                android:background="#FFFF4444"
+                android:id="@+id/red"
+                 />
+            <Button
+                android:onClick="green"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GREEN"
+                android:background="#FF99CC00"
+                android:textSize="25sp"
+
+                android:id="@+id/green"
+                 />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLUE"
+                android:onClick="blue"
+                android:background="#FF33B5E5"
+                android:textSize="25sp"
+                android:id="@+id/blue"
+                 />
+
+
+
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp">
+            <Button
+                android:onClick="grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LTGRAY"
+                android:background="#ffcccccc"
+                android:id="@+id/gray"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YELLOW"
+                android:onClick="yellow"
+
+                android:background="#ffffff00"
+                android:textSize="25sp"
+                android:id="@+id/yellow"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLACK"
+                android:onClick="black"
+                android:textColor="#ffffffff"
+                android:background="#ff000000"
+                android:textSize="25sp"
+                android:id="@+id/black"
+                />
+
+
+
+
+
+
+        </TableRow>
+        <TableRow
+            android:paddingTop="20sp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WHITE "
+                android:onClick="white"
+                android:background="#ffffff"
+                android:textSize="25sp"
+                android:id="@+id/white"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:onClick="mag"
+                android:layout_height="wrap_content"
+                android:text="MAGNETA"
+                android:background="#ffff00ff"
+                android:textSize="25sp"
+                android:id="@+id/magneta"
+                />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cyan"
+                android:background="#ff00ffff"
+                android:textSize="25sp"
+                android:onClick="cyan"
+                android:text="CYAN"
+                />
+
+
+        </TableRow>
+            
+
+        </TableLayout>
+
+</RelativeLayout>
